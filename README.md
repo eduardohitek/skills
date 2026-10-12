@@ -40,12 +40,28 @@ skills/<nome>/SKILL.md            # skills, compartilhadas pelos dois harnesses
 
 ## Adicionando ou alterando uma skill
 
-1. Criar/editar `skills/<nome>/SKILL.md`.
+1. Criar/editar `skills/<nome>/SKILL.md` em uma branch.
 2. Se for skill nova, adicionar `"./skills/<nome>"` em `skills` de `.claude-plugin/plugin.json`
    (o Codex lê a pasta `./skills/` inteira).
-3. Incrementar `version` (SemVer) **igualmente** em `.claude-plugin/plugin.json` e
-   `.codex-plugin/plugin.json`. Sem bump, os harnesses não recebem a atualização.
-4. Validar: `claude plugin validate .`
-5. Atualizar nos harnesses:
-   - Claude Code: `/plugin marketplace update eduardohitek`
-   - Codex: `codex plugin marketplace upgrade eduardohitek`
+3. Validar: `claude plugin validate .`
+4. Abrir PR com título/commit no padrão [Conventional Commits](https://www.conventionalcommits.org/)
+   e fazer merge na `main`.
+
+**Não edite `version` à mão.**
+
+## Releases
+
+O versionamento é feito pelo [release-please](https://github.com/googleapis/release-please):
+
+1. A cada push na `main`, a Action abre/atualiza um PR de release que incrementa `version` nos dois
+   `plugin.json` (sincronizados) e atualiza o `CHANGELOG.md`.
+2. O merge desse PR cria a tag `vX.Y.Z` e a GitHub Release.
+3. Os harnesses detectam o novo `version` e atualizam o plugin.
+
+Regras de bump (antes da 1.0): `feat:` → minor, `fix:` → patch, `feat!:` → minor.
+
+Para atualizar nos harnesses:
+
+- Claude Code: `/plugin marketplace update eduardohitek` (ou ativar auto-update em
+  `/plugin` → Marketplaces → eduardohitek → Enable auto-update)
+- Codex: `codex plugin marketplace upgrade eduardohitek`
