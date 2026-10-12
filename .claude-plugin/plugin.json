@@ -1,0 +1,18 @@
+{
+  "name": "eduardohitek-skills",
+  "version": "0.1.0",
+  "description": "Skills de engenharia e planejamento de Eduardo Hitek.",
+  "author": {
+    "name": "Eduardo Hitek",
+    "url": "https://github.com/eduardohitek"
+  },
+  "repository": "https://github.com/eduardohitek/skills",
+  "keywords": [
+    "skills",
+    "planning",
+    "engineering"
+  ],
+  "skills": [
+    "./skills/sabatina"
+  ]
+}

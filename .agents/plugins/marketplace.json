@@ -1,0 +1,20 @@
+{
+  "name": "eduardohitek",
+  "interface": {
+    "displayName": "Eduardo Hitek"
+  },
+  "plugins": [
+    {
+      "name": "eduardohitek-skills",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Engineering"
+    }
+  ]
+}

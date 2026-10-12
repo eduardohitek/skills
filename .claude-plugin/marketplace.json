@@ -1,0 +1,17 @@
+{
+  "name": "eduardohitek",
+  "owner": {
+    "name": "Eduardo Hitek",
+    "url": "https://github.com/eduardohitek"
+  },
+  "description": "Skills pessoais de Eduardo Hitek para harnesses de desenvolvimento.",
+  "plugins": [
+    {
+      "name": "eduardohitek-skills",
+      "source": "./",
+      "description": "Skills de engenharia e planejamento (sabatina e outras).",
+      "category": "engineering",
+      "keywords": ["skills", "planning", "engineering"]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "eduardohitek-skills",
+  "version": "0.1.0",
+  "description": "Skills de engenharia e planejamento de Eduardo Hitek.",
+  "author": {
+    "name": "Eduardo Hitek"
+  },
+  "homepage": "https://github.com/eduardohitek/skills",
+  "repository": "https://github.com/eduardohitek/skills",
+  "keywords": [
+    "skills",
+    "planning",
+    "engineering"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Eduardo Hitek Skills",
+    "shortDescription": "Skills pessoais de engenharia e planejamento",
+    "developerName": "Eduardo Hitek",
+    "category": "Engineering",
+    "capabilities": [
+      "Read",
+      "Write"
+    ]
+  }
+}
