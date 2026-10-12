@@ -34,6 +34,7 @@ no marketplace `eduardohitek`; primeira leva apenas `sabatina` (versão do Claud
 
 ## Risks & Considerations
 
-- Versão (SemVer) precisa ser incrementada manualmente e igual nos dois `plugin.json`, senão updates não chegam.
+- Versionamento via release-please + GitHub Releases: bump automático e sincronizado nos dois `plugin.json` a partir de Conventional Commits (harnesses não leem Releases, só o `version`).
+- Requer habilitar "Allow GitHub Actions to create and approve pull requests" no repo.
 - Namespace muda a invocação para `/eduardohitek-skills:sabatina`; referências em CLAUDE.md precisam ser atualizadas.
 - Remover cópias locais só depois de validar o carregamento do plugin.
