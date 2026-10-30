@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/eduardohitek/skills/compare/eduardohitek-skills-v1.1.0...eduardohitek-skills-v1.2.0) (2026-10-30)
+
+
+### Features
+
+* **sabatina:** calibra entrevista às diretrizes atuais do modelo ([4170280](https://github.com/eduardohitek/skills/commit/4170280e15688fd707148cefc679a80b94915e9a))
+
 ## [1.1.0](https://github.com/eduardohitek/skills/compare/eduardohitek-skills-v1.0.0...eduardohitek-skills-v1.1.0) (2026-10-23)
 
 
